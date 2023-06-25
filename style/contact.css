@@ -1,0 +1,196 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: whitesmoke;
+    margin: 3rem 5%;
+    color: #263A29;
+}
+
+/*---------------------------------- Header Logo --------------------------------- */
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header>img{
+    width: 20%;
+    height: auto;
+}
+
+/* ------------------------------------- Navbar --------------------------------*/
+nav{
+
+    background-color: #E86A33;
+    padding: 1.5rem;
+    margin: 1rem 0;
+}
+
+nav>ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    text-align: center;
+
+    margin: 0 10%;
+}
+
+nav a{
+    font-size: 1.5rem;
+    color: #263A29;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #F2E3DB;
+}
+
+
+
+/* ----------------------------------------- Heading ----------------------------------*/
+
+.heading{
+    text-align: center;
+    background-color: #263A29;
+    color: #F2E3DB;
+    margin-bottom: 2rem;
+}
+
+/* ----------------------------------Form-------------------------------- */
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #F2E3DB;
+    border-radius: 5%;
+    padding: 1rem;
+
+}
+
+.row50{
+    display: flex;
+    gap: 10px;
+
+}
+.row100{
+    display: flex;
+}
+
+.input-box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+.input-box label{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.input-box input{
+    margin-top: 1rem;
+    border: none;
+    padding: 1rem;
+}
+.input-box textarea{
+    margin-top: 1rem;
+    border: none;
+    padding: 1rem;
+
+}
+
+.input-box input:hover{
+    border: 1px #263A29 solid;
+
+}
+
+/* ---------------------------- Send Button ------------------------------- */
+
+.row100 input{
+    margin: 0 40%;
+    padding: 1rem;
+    width: 20%;
+    background-color: #263A29;
+    color: #F2E3DB;
+    text-transform: uppercase;
+
+}
+
+.row100 input:hover{
+    background-color: #E86A33;
+    color: #263A29;
+    border: none;
+}
+
+
+
+/* -------------------------------- Media Queries -------------------------------- */
+
+@media only screen and (max-width: 600px) {
+
+    nav{
+
+        background-color: #E86A33;
+        padding: 1rem;
+        margin: 1rem 0;
+    }
+
+    nav>ul{
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        text-align: center;
+    
+        margin: 0 5%;
+    }
+
+    nav a{
+        font-size: 1rem;
+        color: #263A29;
+        text-decoration: none;
+    }
+
+}
+
+@media only screen and (max-width:760px){
+
+    .grid-container{
+        display: flex;
+        flex-direction: column;
+        background-color: #F2E3DB;
+        border-radius: 5%;
+    }
+}
+
+
+@media only screen and (max-width:600px){
+
+    .grid-container{
+        display: flex;
+        flex-direction: column;
+        background-color: #F2E3DB;
+        border-radius: 5%;
+
+
+    }
+
+    .row50{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-right: 1.5rem ;
+    }
+    
+    .row100 input{
+        margin: 0 35%;
+        padding: 1rem;
+        width: 30%;
+        background-color: #263A29;
+    
+    }
+}

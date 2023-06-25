@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: whitesmoke;
+    margin: 3rem 5%;
+    color: #263A29;
+}
+
+/*---------------------------------- Header Logo --------------------------------- */
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header>img{
+    width: 20%;
+    height: auto;
+}
+
+/* ------------------------------------- Navbar --------------------------------*/
+nav{
+
+    background-color: #E86A33;
+    padding: 1.5rem;
+    margin: 1rem 0 2rem 0;
+}
+
+nav>ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    text-align: center;
+
+    margin: 0 10%;
+}
+
+nav a{
+    font-size: 1.5rem;
+    color: #263A29;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #F2E3DB;
+}
+
+#heading{
+    font-size: 2rem;
+    text-align: center;
+    background-color: #263A29;
+    color: #ecd7cc;
+    margin-bottom: 2.5rem;
+}
+
+article{
+    margin: 1.5rem 15%;
+    background-color: #F2E3DB;
+    padding: 2rem;
+    border-radius: 5%;
+}
+
+article h1{
+    margin: 1rem 0;
+}
+
+/* -----------------------------Footer---------------------- */
+
+footer{
+    background-color: #263A29;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F2E3DB;
+}
+
+footer img{
+    width: 2rem;
+    height: auto;
+    margin-right: 1rem;
+}
+
+/* -------------------- Media Queries ---------------------------- */
+
+
+@media only screen and (max-width: 600px) {
+
+    nav{
+
+        background-color: #E86A33;
+        padding: 1rem;
+        margin: 1rem 0;
+    }
+
+    nav>ul{
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        text-align: center;
+    
+        margin: 0 5%;
+    }
+
+    nav a{
+        font-size: 1rem;
+        color: #263A29;
+        text-decoration: none;
+    }
+
+}
+
+@media only screen and (max-width: 1150px) {
+
+    article{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        margin: 0;
+    }
+
+    footer{
+        margin-top: 1rem;
+    }
+
+
+}
